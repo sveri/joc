@@ -1,3 +1,4 @@
 dependencies {
+    implementation project(':runner')
     implementation project(':utils')
 }

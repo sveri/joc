@@ -4,7 +4,6 @@ import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.stmt.Statement;
-import de.sveri.joc.parser.Main;
 import de.sveri.joc.parser.antlr.Utils;
 import org.junit.jupiter.api.Test;
 
@@ -12,8 +11,8 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@SuppressWarnings("OptionalGetWithoutIsPresent")
 class PrintStatementTest {
-
 
     private String mainMethodName = "main";
 

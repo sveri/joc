@@ -3,6 +3,6 @@ rootProject.name = 'joc'
 include 'utils'
 include 'compiler'
 include 'parser'
-include 'executor'
+include 'runner'
 include 'repl'
 

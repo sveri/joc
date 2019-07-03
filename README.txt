@@ -1,7 +1,9 @@
-editor write code (main(foo: any){})
 
---> parser (convert to java file)
+--> repl  write code (main(foo: any){})
 
---> compile java to class
+--> Glue
+    --> parser (convert to java file)
 
---> execute class
+    --> compile java to class
+
+    --> execute class
