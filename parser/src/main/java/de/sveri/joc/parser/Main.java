@@ -1,12 +1,7 @@
-package de.sveri.joc;
+package de.sveri.joc.parser;
 
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
-import com.github.javaparser.ast.body.MethodDeclaration;
-import de.sveri.joc.antlr.CompleteVisitor;
-import de.sveri.joc.antlr.MethodVisitor;
-import de.sveri.joc.antlr.PackageVisitor;
-import de.sveri.joc.antlr.PrintStatementVisitor;
+import de.sveri.joc.parser.antlr.CompleteVisitor;
 import de.sveri.joc.antlr.generated.JocLexer;
 import de.sveri.joc.antlr.generated.JocParser;
 import org.antlr.v4.runtime.CharStream;

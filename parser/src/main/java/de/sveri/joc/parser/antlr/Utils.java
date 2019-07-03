@@ -1,4 +1,4 @@
-package de.sveri.joc.antlr;
+package de.sveri.joc.parser.antlr;
 
 public class Utils {
 

@@ -1,4 +1,4 @@
-package de.sveri.joc.antlr;
+package de.sveri.joc.parser.antlr;
 
 import de.sveri.joc.antlr.generated.JocBaseVisitor;
 import de.sveri.joc.antlr.generated.JocParser;
