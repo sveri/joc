@@ -1,0 +1,20 @@
+plugins {
+    id 'antlr'
+}
+
+dependencies {
+    implementation project(':utils')
+
+    implementation 'com.github.javaparser:javaparser-core-serialization:3.14.5'
+
+    antlr "org.antlr:antlr4:4.7.2"
+}
+
+
+
+
+generateGrammarSource {
+    maxHeapSize = "64m"
+    arguments += ["-visitor"]
+}
+
