@@ -1,4 +1,15 @@
+plugins {
+    id 'application'
+}
+
+application {
+    mainClassName = 'de.sveri.joc.repl.ReplEntry'
+}
+
 dependencies {
-    implementation project(':runner')
+    implementation 'org.jline:jline-terminal:3.11.0'
+    implementation 'org.jline:jline-reader:3.11.0'
+    
+    implementation project(':interpreter')
     implementation project(':utils')
 }

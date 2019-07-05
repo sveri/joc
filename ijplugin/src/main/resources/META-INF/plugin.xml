@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>de.sveri.ijplugin</id>
+    <name>JOC</name>
+    <vendor email="info@sveri.de" url="http://sveri.de">SveriComp</vendor>
+
+    <description><![CDATA[
+    JOC plugin used for the JOC programming language.
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="Joc.Menu" text="_JOC" description="Joc Menu">
+            <add-to-group group-id="MainMenu" anchor="last"  />
+            <action id="Joc.Run" class="de.sveri.joc.ijplugin.RunMethod" text="_Run"
+                    description="Run Joc File" >
+                <keyboard-shortcut first-keystroke="alt shift v" keymap="$default" />
+            </action>
+<!--            <action id="Myplugin.Dialogs" class="de.sveri.joc.ijplugin.RunMethod" text="Show _Dialog" description="A test menu item" />-->
+        </group>
+
+<!--        <action id="JocRunMethod" class="de.sveri.joc.ijplugin.RunJocMethod" text="Run Joc Method"-->
+<!--                description="Run Joc Method">-->
+<!--            <add-to-group group-id="RunMenu" anchor="first"/>-->
+<!--            <keyboard-shortcut first-keystroke="alt shift V" keymap="$default"/>-->
+<!--        </action>-->
+    </actions>
+</idea-plugin>

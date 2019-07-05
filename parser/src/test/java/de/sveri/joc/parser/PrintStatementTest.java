@@ -70,7 +70,7 @@ class PrintStatementTest {
 
     MethodDeclaration parseAndGetMainMethod(String input) {
         String fileName = "TestFile";
-        CompilationUnit compilationUnit = Main.parseInput(fileName, input);
+        CompilationUnit compilationUnit = Main.parseString(fileName, input);
         ClassOrInterfaceDeclaration clazz = compilationUnit.getClassByName(Utils.getClassName(fileName,
                 mainMethodName)).get();
         List<MethodDeclaration> methods = clazz.getMethodsByName(mainMethodName);

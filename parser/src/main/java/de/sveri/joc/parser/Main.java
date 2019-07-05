@@ -9,10 +9,22 @@ import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class Main {
 
-    static CompilationUnit parseInput(String fileName, String input){
+    public static CompilationUnit parseIs(String fileName, InputStream input) throws IOException {
+        CommonTokenStream tokens = getTokens(CharStreams.fromStream(input));
+        return parseTokens(fileName, tokens);
+    }
+
+    public static CompilationUnit parseString(String fileName, String input) {
         CommonTokenStream tokens = getTokens(CharStreams.fromString(input));
+        return parseTokens(fileName, tokens);
+    }
+
+    private static CompilationUnit parseTokens(String fileName, CommonTokenStream tokens){
         JocParser jocParser = new JocParser(tokens);
         ParseTree tree = jocParser.file();
 
